@@ -15,5 +15,23 @@
         console.log(number + ' - the number is prime');
         return true;
     }
+
     isPrime(20);
+
+    //Task 2 (factorial)
+    function factorial(num)
+    {
+        if (num < 0) {
+            return -1;
+        }
+        else if (num === 0) {
+            return 1;
+        }
+        else {
+            let fact = num * factorial(num - 1);
+            console.log(fact);
+            return fact;
+        }
+    }
+factorial(4);
 })();
